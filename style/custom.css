@@ -1,0 +1,192 @@
+
+/* Adding Fonts */
+
+@font-face {
+	font-family: 'Times New Roman Italic';
+	src: url('../fonts/times_new_roman_italic.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/times_new_roman_italic.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/times_new_roman_italic.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/times_new_roman_italic.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/times_new_roman_italic.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/times_new_roman_italic.svg#times_new_roman_italic') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Times New Roman Bold';
+	src: url('../fonts/times_new_roman_bold.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/times_new_roman_bold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/times_new_roman_bold.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/times_new_roman_bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/times_new_roman_bold.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/times_new_roman_bold.svg#times_new_roman_bold') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+body {
+    background-color: white;
+    margin: 0 auto;
+    min-width: 320px;
+}
+
+/* General Container */
+
+.container {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/* General headers and text styles */
+
+h2 {
+    color: #ffffff;
+    padding-bottom: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    font-weight: 100;
+    line-height: 50px;
+}
+
+h2.black {
+    color: #2e2e2e;
+}
+
+h2 span {
+    font-weight: 900;
+}
+
+h3 {
+    max-width: 510px;
+    margin: 0 auto;
+    padding: 0px 20px;
+    color: #bfbfbf;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    text-transform: none;
+    text-align: center;
+    line-height: 25px;
+}
+
+/* Section #7: Feedback */
+
+
+.section7_feedback {
+    background: #25292c url('../img/bg/fourth-bg.jpg') center bottom no-repeat;
+    min-height: 714px;
+}
+
+.section7_feedback .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.section7_feedback h2 {
+    padding-top: 140px;
+}
+
+.section7_feedback h3 {
+    color: #b3b3b3;
+}
+
+.feedback_review {
+    display: flex;
+}
+
+.feedback_review-quotation {
+    color: #fcdb5a;
+    font-family: 'Times New Roman Bold', sans-serif;
+    font-size: 100px;
+    text-transform: none;
+    padding: 25px 0 0 10px;
+}
+
+.feedback_review-text {
+    color: rgb(255, 255, 255);
+    font-family: 'Times New Roman Italic', cursive;
+    font-size: 25px;
+    text-transform: none;
+    width: 1005px;
+    padding: 50px 20px 0 40px;
+    line-height: 30px;
+    text-align: left;
+}
+
+.feedback_credentials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.feedback_credentials img:first-of-type {
+    margin: 45px 20px 30px 100px;
+}
+
+.feedback_credentials img:last-of-type {
+    margin: 70px 100px 30px 0px;
+    padding: 0;
+}
+
+.feedback_credentials p {
+    width: 70%;
+    color: rgb(255, 255, 255);
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: none;
+    line-height: 30px;
+    text-align: left;
+    padding-top: 15px;
+}
+
+.feedback_credentials p span {
+    font-weight: 700;
+}
+
+
+    /* Resp-Section #7: Feedback */ 
+
+
+@media (max-width: 500px) {
+    main .section7_feedback {
+        background: #25292c url('../img/bg/fourth-bg.jpg') center bottom no-repeat;
+    }
+    main .section7_feedback .feedback_credentials img:first-of-type {
+        margin: 20px 20px 30px 20px;
+    }
+    main .section7_feedback .feedback_credentials p {
+        padding: 35px 0px 45px 10px;
+    }
+    main .section7_feedback .feedback_credentials img:last-of-type {
+        margin: 30px 50px 30px 20px;
+    }
+}
+        
+@media (max-width: 900px) {
+    main .section7_feedback h2 {
+        padding-top: 90px;
+        transition: 1s;
+    }
+}
+@media (max-width: 800px) {
+    .feedback_review .feedback_review-quotation {
+        font-size: 70px;
+        padding: 25px 0 0 5px;
+        transition: 1s;
+    }
+    .feedback_review .feedback_review-text {
+        font-size: 20px;
+        padding: 30px 30px 0 20px;
+        line-height: 27px;
+        text-align: justify;
+        transition: 1s;
+    }
+    .section7_feedback .feedback_credentials img:last-of-type {
+        margin: 70px 50px 30px 0px;
+        padding: 0;
+    }
+    .section7_feedback .feedback_credentials p span {
+        display: block;
+    }
+}
