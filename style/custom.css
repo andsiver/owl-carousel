@@ -74,7 +74,8 @@ h3 {
 
 .section7_feedback {
     background: #25292c url('../img/bg/fourth-bg.jpg') center bottom no-repeat;
-    min-height: 714px;
+    background-size: cover;
+    min-height: 100vh;
 }
 
 .section7_feedback .container {
@@ -156,11 +157,23 @@ main .owl-carousel .owl-item img {
     justify-content: center !important;
 }
 
-main .owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot, 
-main .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot { 
+main .owl-carousel .owl-nav button.owl-prev, 
+main .owl-carousel .owl-nav button.owl-next { 
     font-size: 150px;
-    color:  rgba(252, 220, 90, 0.8);
+    color:  rgba(252, 220, 90, 0.7);
     padding: 0 50px !important;
+}
+
+main .owl-carousel .owl-nav button.owl-prev:hover, 
+main .owl-carousel .owl-nav button.owl-next:hover { 
+    color: rgba(252, 220, 90, 1);
+    transition: 0.5s;
+}
+
+main .owl-carousel .owl-nav button.owl-prev:active, 
+main .owl-carousel .owl-nav button.owl-next:active { 
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
 }
 
     /* Resp-Section #7: Feedback */ 
