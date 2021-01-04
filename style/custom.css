@@ -144,9 +144,26 @@ h3 {
     font-weight: 700;
 }
 
+/* Owl Carousel Styles Changes */ 
+
+main .owl-carousel .owl-item img {
+    display: block;
+    width: initial;
+}
+
+.owl-nav {
+    display: flex !important;
+    justify-content: center !important;
+}
+
+main .owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot, 
+main .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot { 
+    font-size: 150px;
+    color:  rgba(252, 220, 90, 0.8);
+    padding: 0 50px !important;
+}
 
     /* Resp-Section #7: Feedback */ 
-
 
 @media (max-width: 500px) {
     main .section7_feedback {
@@ -188,5 +205,16 @@ h3 {
     }
     .section7_feedback .feedback_credentials p span {
         display: block;
+    }
+}
+
+@media (min-width: 1200px) {
+    .section7_feedback h2 {
+        padding-top: 90px;
+        transition: 1s;
+    }
+    .section7_feedback .feedback_credentials img:last-of-type {
+        display: none;
+        transition: 1s;
     }
 }
