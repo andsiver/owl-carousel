@@ -120,17 +120,12 @@ h3 {
     align-items: center;
 }
 
-.feedback_credentials img:first-of-type {
+.feedback_credentials img {
     margin: 45px 20px 30px 100px;
 }
 
-.feedback_credentials img:last-of-type {
-    margin: 70px 100px 30px 0px;
-    padding: 0;
-}
-
 .feedback_credentials p {
-    width: 70%;
+    width: 80%;
     color: rgb(255, 255, 255);
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
@@ -176,29 +171,48 @@ main .owl-carousel .owl-nav button.owl-next:active {
     transition: 0.5s;
 }
 
+main .owl-carousel .owl-item img {
+    display: block;
+    width: initial;
+}
+
+.owl-carousel {
+    position: relative !important;
+}
+
+.owl-dots {
+    position: absolute !important;
+    top: 80% !important;
+    left: 85% !important;
+    transform: translate(-50%, -50%) !important;
+}
+.owl-dot {
+    margin-right: 11px !important;
+    border: solid 3px #4b4b4c !important;
+    border-radius: 50% !important;
+    background: transparent !important;
+    width: 12px !important;
+    height: 12px !important;
+}
+.owl-dot:last-of-type {
+    margin-right: 0px !important;
+}
+.owl-dots .active {
+    border: solid 3px #fde557 !important;
+    background: #fde557 !important;
+}
+
     /* Resp-Section #7: Feedback */ 
 
 @media (max-width: 500px) {
     main .section7_feedback {
         background: #25292c url('../img/bg/fourth-bg.jpg') center bottom no-repeat;
     }
-    main .section7_feedback .feedback_credentials img:first-of-type {
-        margin: 20px 20px 30px 20px;
-    }
     main .section7_feedback .feedback_credentials p {
         padding: 35px 0px 45px 10px;
     }
-    main .section7_feedback .feedback_credentials img:last-of-type {
-        margin: 30px 50px 30px 20px;
-    }
 }
         
-@media (max-width: 900px) {
-    main .section7_feedback h2 {
-        padding-top: 90px;
-        transition: 1s;
-    }
-}
 @media (max-width: 800px) {
     .feedback_review .feedback_review-quotation {
         font-size: 70px;
@@ -212,22 +226,21 @@ main .owl-carousel .owl-nav button.owl-next:active {
         text-align: justify;
         transition: 1s;
     }
-    .section7_feedback .feedback_credentials img:last-of-type {
-        margin: 70px 50px 30px 0px;
-        padding: 0;
-    }
     .section7_feedback .feedback_credentials p span {
         display: block;
+    }
+}
+
+@media (max-width: 900px) {
+    main .section7_feedback h2 {
+        padding-top: 90px;
+        transition: 1s;
     }
 }
 
 @media (min-width: 1200px) {
     .section7_feedback h2 {
         padding-top: 90px;
-        transition: 1s;
-    }
-    .section7_feedback .feedback_credentials img:last-of-type {
-        display: none;
         transition: 1s;
     }
 }
